@@ -1,0 +1,103 @@
+<nav class="teal lighten-2 inicio">
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo">
+      <img src="img/logo.png" class="responsive-img">
+    </a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      {{#if user}}     
+      <li class="nav-item">
+        <a class="nav-link" href="/mundo-virtual">
+          <i class="material-icons left">language</i>
+          Mundo Virtual
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/plenaria">
+          <i class="material-icons left">event</i>
+          Plenaria
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/profile">
+          <i class="material-icons left">person</i>
+          Profile
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link logout" href="/logout">
+          <i class="material-icons left">exit_to_app</i>
+          Logout
+        </a>
+      </li>
+
+      {{else}}
+      <li class="nav-item">
+        <a class="nav-link" href="/signin">
+          <i class="material-icons left">lock</i>
+          Acceso
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/signup">
+          <i class="material-icons left">verified_user</i>
+          Registrate
+        </a>
+      </li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  {{#if user}}
+  <li>
+    <div class="user-view">
+        <div class="background">
+            <img src="img/chat-background.png" />
+        </div>
+        <img class="circle" src="{{user.photo}}">
+        <span class="white-text name">{{user.fullname}}</span>
+        <span class="white-text email">{{user.email}}</span>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/mundo-virtual">
+      <i class="material-icons left">language</i>
+      Mundo Virtual
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/plenaria">
+      <i class="material-icons left">event</i>
+      Plenaria
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/profile">
+      <i class="material-icons left">person</i>
+      Profile
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">
+      <i class="material-icons left">exit_to_app</i>
+      Logout
+    </a>
+  </li>
+  {{else}}
+  <li class="nav-item">
+    <a class="nav-link" href="/signin">
+      Acceso
+      <i class="material-icons left">lock</i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/signup">
+      Registrate
+      <i class="material-icons left">verified_user</i>
+    </a>
+  </li>
+  {{/if}}
+</ul>

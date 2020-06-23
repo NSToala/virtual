@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.content {
+  max-width: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303952;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 960px) {
+  .content {
+    padding: 0 3rem 0 3rem;
+  }
+}
+
+.collection-item > label {
+  color: #595959;
+}
+
+.collection-item.active > label > [type="radio"]:disabled+span {
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn-mostrar, .btn-archivar {
+  font-size: 10px;
+}
+
+.disable {
+  background-color: rgba(115, 115, 115, 0.5) !important;
+  opacity: 0.5;
+}
+
+#canvas {
+  max-width: 100%;
+}
+
+.chat {
+  width: 100%;
+  font-weight: bold;
+  padding-left: 15px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.chat .circle {
+  border: solid 3px #42b829;
+  height: 40px;
+  width: 40px;
+  border: solid 3px #42b829;
+}
+
+.chat ._user {
+  padding-left: 15px;
+  color: rgba(0,0,0,0.87);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+._chat {
+  cursor: pointer;
+}
+
+._chat:hover {
+  color: #42b829;
+}
+
+._chat:active {
+  color: #42b829;
+}
+
+.sidenav .user-view .name, .sidenav .user-view .email {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+._noresult {
+  width: 100%;
+  text-align: center;  
+  font-weight: bold;
+  height: 48px;
+  line-height: 48px;
+}
+
+iframe {
+  width: 350px;
+  height: 500px;
+  border: none;
+}
+
+.plenaria {
+  width: 100%;
+  /* height: 500px; */
+  border: none;
+}

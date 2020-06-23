@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Votación ::.</title>
+	
+	{{!-- Boostrap 4 --}}
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Import materialize.css-->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>	
+	{{> navigation-tools }}
+    {{{ body }}}
+
+	<!-- JS Files Import -->
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script src="https://unpkg.com/almete.wordcloud"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+	<script type="text/javascript" src="/js/wordcloud.js"></script>
+	<script type="text/javascript" src="/js/votacion.js"></script>
+	<script type="text/javascript" src="/js/tanger_live.js"></script>
+</body>
+</html>

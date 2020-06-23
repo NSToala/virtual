@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Tanger-inc ::.</title>
+    <link rel="stylesheet" href="/css/chatroom.css">
+</head>
+<body class="chat">
+    {{{ body }}}
+
+    <input type="hidden" id="uid" value="{{user.id_user}}">
+    <input type="hidden" id="fullname" value="{{user.fullname}}">
+    <input type="hidden" id="photo" value="{{user.photo}}">
+    
+    {{!-- Scripts --}}
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/newChat.js"></script>
+    <script type="text/javascript" src="/js/libs/moment.js"></script>
+    <script type="text/javascript" src="/js/libs/mustache.js"></script>
+</body>
+</html>

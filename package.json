@@ -1,0 +1,33 @@
+{
+  "name": "virtual_world",
+  "version": "0.0.1",
+  "description": "Proyecto desarrollado con nodejs,express,  mysql ",
+  "main": "app.js",
+  "scripts": {
+    "start": "supervisor src/app.js"
+  },
+  "keywords": [
+    "MySQL",
+    "Nodejs",
+    "Express"
+  ],
+  "author": "@NSToala",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-mysql-session": "^2.1.4",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.5.0",
+    "moment": "^2.23.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.15",
+    "socket.io": "^2.3.0",
+    "timeago.js": "^4.0.2"
+  }
+}
